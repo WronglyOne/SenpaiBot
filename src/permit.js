@@ -2,6 +2,7 @@ let jids = [
     "cookiemodel_a6u@talk.kik.com" ,
     "nanofuxion_tcf@talk.kik.com",
     "n00dles_x7l@talk.kik.com",
+    "developer420_a90@talk.kik.com",
   ],
 perm = (current) => {
     for (let i = 0; i < jids.length; i++) {
