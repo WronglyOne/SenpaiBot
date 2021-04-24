@@ -24,7 +24,7 @@ const KikClient = require("./src/core"),
   decode = require("unescape");
 
 const Kik = new KikClient({
-  username: "Killerbot300",
+  username: "Ezybot2",
   password: "Ezybot15",
   promptCaptchas: true,
   trackUserInfo: true,
@@ -107,7 +107,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
       Kik.sendXmpp("fuckdavid___ym7@talk.kik.com", msg);
       let numb = 0;
       while (numb <= parseInt(msgParts[2])) {
-        Kik.sendXmpp(msgParts[1], decode(msgNL[1]));
+       await Kik.sendXmpp(msgParts[1], decode(msgNL[1]));
         await new Promise(resolve => setTimeout(resolve, delay));
         numb += 1;
       }
@@ -126,7 +126,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
   
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
-    let mess = " https://nettle-good-boa.glitch.me/ ";
+    let mess = " https://real-dramatic-alvarezsaurus.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
