@@ -123,7 +123,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
   
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
-    let mess = " https://nettle-good-boa.glitch.me/? ";
+    let mess = " https://foul-valiant-humidity.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
