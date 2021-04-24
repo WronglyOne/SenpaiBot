@@ -114,7 +114,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
 
   if (msgParts[0] == "Add" && msgParts[1] == "me") {
-    let mess = "I've always wanted a BFF, you can add me to groups now";
+    let mess = "Your wish is my command";
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
