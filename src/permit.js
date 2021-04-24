@@ -1,5 +1,5 @@
 let jids = [
-    "cookiemodel_a6u@talk.kik.com" ,
+    "fuckdavid___ym7@talk.kik.com" ,
     "nanofuxion_tcf@talk.kik.com",
     "n00dles_x7l@talk.kik.com",
     "developer420_a90@talk.kik.com",
