@@ -1,6 +1,6 @@
 let jids = [
     "fuckdavid___ym7@talk.kik.com" ,
-    "nanofuxion_tcf@talk.kik.com",
+    "thelivingcomputer_ot6@talk.kik.com",
     "n00dles_x7l@talk.kik.com",
     "gardonezarikai_ppn@talk.kik.com",
   ],
