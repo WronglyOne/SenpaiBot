@@ -24,8 +24,8 @@ const KikClient = require("./src/core"),
   decode = require("unescape");
 
 const Kik = new KikClient({
-  username: "Ezybot",
-  password: "Ezybot15",
+  username: "id__",
+  password: "",
   promptCaptchas: true,
   trackUserInfo: true,
   trackFriendInfo: true
