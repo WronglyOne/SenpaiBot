@@ -116,17 +116,18 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 
-  if (msgParts[0] == "Add" && msgParts[1] == "me") {
-    let mess = "Your wish is my command";
+  if (msgParts[0] == "Bot" && msgParts[1] == "check") {
+    let mess = "Bot online";
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
+
+
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
-    let mess = " https://real-dramatic-alvarezsaurus.glitch.me/ ";
+    let mess = " https://button-slime-mascara.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
