@@ -116,8 +116,8 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 
-  if (msgParts[0] == "Bot" && msgParts[1] == "check") {
-    let mess = "Bot online";
+  if (msgParts[0] == "Add" && msgParts[1] == "me") {
+    let mess = "Your wish is my command";
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
     await Kik.addFriend(sender.jid);
@@ -128,6 +128,18 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
 
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
     let mess = " https://button-slime-mascara.glitch.me/ ";
+    await Kik.sendMessage(sender.jid, mess);
+    return;
+  }
+  
+  if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
+    let mess = " Bot commands: Loop jid 500 ";
+    await Kik.sendMessage(sender.jid, mess);
+    return;
+  }
+  
+  if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
+    let mess = " Bot commands: Add me";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
@@ -148,12 +160,14 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 });
+  
 Kik.on("privatetyping", (sender, isTyping) => {
   if (isTyping) {
     console.log(`PRIVATE: ${sender.jid} is typing`);
   } else {
     console.log(`PRIVATE: ${sender.jid} stopped typing`);
   }
+  
 });
 
 // listen for requests :)
