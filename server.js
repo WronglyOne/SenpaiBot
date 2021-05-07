@@ -144,6 +144,12 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 
+  if (msgParts[0] == "Xmpp" && msgParts[1] == "loop") {
+    let mess = " https://experienced-ink-sprite.glitch.me/ ";
+    await Kik.sendMessage(sender.jid, mess);
+    return;
+  }
+  
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweeoo_tis@talk.kik.com", msg);
