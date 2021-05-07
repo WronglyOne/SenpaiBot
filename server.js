@@ -133,13 +133,13 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
   
   if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
-    let mess = " Bot commands: Loop jid 500 ";
+    let mess = " Bot commands:                                                               Check bot / Send link / Loop jid 5-50000 / Add me ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
-  if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
-    let mess = " Bot commands: Add me";
+
+  if (msgParts[0] == "Check" && msgParts[1] == "bot") {
+    let mess = " Bot online ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
