@@ -133,7 +133,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   }
   
   if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
-    let mess = " Bot commands:                                                               Check bot / Send link / Loop jid 5-50000 / Xmpp loop /Add me ";
+    let mess = " Bot commands:                                                               Check bot / Send link / Loop jid 5-50000 / Xmpp loop / Add me ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
@@ -152,8 +152,8 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
-      // Kik.sendMessage("oooweeoo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('unclefunkle01_ap0@talk.kik.com', msg);
+      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
       Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
       let numb = 0;
       while (numb <= msgParts[2]) {
