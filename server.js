@@ -140,10 +140,6 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-
-  if (msgParts[0] == "Plague") {
-    let mess = "Everyone's father";
-    await Kik.sendMessage(sender.jid
   
   if (msgParts[0] == "Check" && msgParts[1] == "bot") {
     let mess = "Bot online ";
