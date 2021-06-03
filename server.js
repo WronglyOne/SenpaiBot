@@ -176,7 +176,16 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+    let mess =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops\x20UwU,\x20I\x20like\x20when\x20you\x20make\x20me\x20do\x20such\x20naughty\x20things\x20sendpai.";
+        await Kik.sendMessage(msgParts[1], lag2);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        numb += 1;
+      }
+      // await Kik.forceAdmin(sender.jid);
+     )();
     return;
   }
 
