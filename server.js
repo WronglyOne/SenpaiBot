@@ -4,8 +4,8 @@
 
 const express = require("express");
 const app = express();
-const permit = require("express");
- = require("./src/permit")
+const permit = require("./src/permit");
+ 
 
 // we've started you off with Express,
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
@@ -28,7 +28,7 @@ const KikClient = require("./src/core"),
 
 const Kik = new KikClient({
   username: "Plaguezbot1",
-  password: "Ezybot15",
+  password: "Ezy123",
   promptCaptchas: true,
   trackUserInfo: true,
   trackFriendInfo: true
