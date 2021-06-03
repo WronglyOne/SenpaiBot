@@ -252,6 +252,7 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 
+  
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweoo_tisl@talk.kik.com", msg);
