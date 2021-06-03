@@ -23,6 +23,7 @@ app.get("/", function(request, response) {
 const KikClient = require("./src/core"),
   decode = require("unescape");
 
+
 const Kik = new KikClient({
   username: "Plaguezbot1",
   password: "Ezybot15",
@@ -30,6 +31,7 @@ const Kik = new KikClient({
   trackUserInfo: true,
   trackFriendInfo: true
 });
+
 
 async function webXmpp(stan, num, vic) {
   let numb = 0;
