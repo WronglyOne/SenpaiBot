@@ -176,20 +176,21 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    let mess =
+    let mess2 =
           "all\x20done\x20sending\x20" +
           msgParts[2] +
-          "\x20loops\x20UwU,\x20I\x20like\x20when\x20you\x20make\x20me\x20do\x20such\x20naughty\x20things\x20sendpai.";
-        await Kik.sendMessage(msgParts[1], lag2);
-        await new Promise(resolve => setTimeout(resolve, delay));
-        numb += 1;
-      }
-      // await Kik.forceAdmin(sender.jid);
-     )();
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
   }
+      
+   
+      // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
+  }
 
-  if (msgParts[0] == "Rekt" && msgParts[1].endsWith("@groups.kik.com")) {
+ if (msgParts[0] == "Rekt" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
       // Kik.sendMessage("oooweooo_tis@talk.kik.com", msg);
       // Kik.sendMessage('uncefjunkle01_ap0@talk.kik.com', msg);
