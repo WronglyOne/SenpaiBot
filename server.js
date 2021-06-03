@@ -175,7 +175,10 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         await new Promise(resolve => setTimeout(resolve, delay));
         numb += 1;
       }
-      
+      // await Kik.forceAdmin(sender.jid);
+    })();
+    return;
+  }
 
   if (msgParts[0] == "Rekt" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
