@@ -252,6 +252,16 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
     return;
   }
 
+  let _0x35d38c =
+          "all\x20done\x20sending\x20" +
+          _0xd5a323[0x2] +
+          "\x20loops\ ";
+        await Kik["sendMessage"](_0x1d3c6b[_0x57c587(0xe1)], _0x35d38c);
+}
+  // await Kik.forceAdmin(sender.jid);
+    )();
+      return;
+    }
   
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
     (async () => {
