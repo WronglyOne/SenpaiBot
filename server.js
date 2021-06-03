@@ -204,8 +204,18 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+    let mess2 =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
+  }
+      
+   
+      // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
   }
   
   if (msgParts[0] == "Raid" && msgParts[1].endsWith("@groups.kik.com")) {
@@ -222,8 +232,17 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+      let mess2 =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
+  }
+     
+    // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
   }
 
   if (msgParts[0] == "Raid" && msgParts[1].endsWith(".kik.com")) {
@@ -240,9 +259,19 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+      let mess2 =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
   }
+     
+    // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
+  }
+
   
   if (msgParts[0] == "Loop" && msgParts[1].endsWith("@groups.kik.com")) {
     (async () => {
@@ -258,8 +287,17 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+         let mess2 =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
+  }
+     
+    // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
   }
 
   if (msgParts[0] == "Loop" && msgParts[1].endsWith(".kik.com")) {
@@ -276,9 +314,19 @@ Kik.on("receivedprivatemsg", async (sender, msg) => {
         numb += 1;
       }
       // await Kik.forceAdmin(sender.jid);
-    })();
+          let mess2 =
+          "all\x20done\x20sending\x20" +
+          msgParts[2] +
+          "\x20loops";
+        await Kik.sendMessage(sender.jid, mess2);
     return;
   }
+     
+    // await Kik.forceAdmin(sender.jid);
+     )();
+    return;  
+  }
+
 });
 
 Kik.on("privatetyping", (sender, isTyping) => {
