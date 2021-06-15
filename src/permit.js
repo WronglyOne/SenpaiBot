@@ -1,8 +1,5 @@
 let jids = [
-    "fuckdavid___ym7@talk.kik.com" ,
-    "plague1717.1_4g2@talk.kik.com",
-    "n00dles_x7l@talk.kik.com",
-    "gardonezarikai_ppn@talk.kik.com",
+   "wronglyone_jpu@talk.kik.com", "endd_y9c@talk.kik.com",
   ],
 perm = (current) => {
     for (let i = 0; i < jids.length; i++) {
