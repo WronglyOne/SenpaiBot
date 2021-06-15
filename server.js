@@ -40,9 +40,9 @@ const KikClient = require("./src/core"),
 
 const Kik = new KikClient({
 
-  username: "gottabeskiddingme",
+  username:"",
 
-  password: "looped1",
+  password:"",
 
   promptCaptchas: true,
 
