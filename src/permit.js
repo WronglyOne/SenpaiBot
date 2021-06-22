@@ -1,6 +1,4 @@
-let jids = [
-   "wronglyone_jpu@talk.kik.com", "endd_y9c@talk.kik.com",
-  ],
+let jids = [ "" ],
 perm = (current) => {
     for (let i = 0; i < jids.length; i++) {
         const jid = jids[i];
