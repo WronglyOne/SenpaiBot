@@ -17,7 +17,6 @@ const EventEmitter = require("events"),
     addFriend = require("kik-node-api/src/requests/addFriend"),
     setAdmin = require("kik-node-api/src/requests/setAdmin"),
     rawXmpp = require("./rawXmpp"),
-    status = require("./status"),
     setBanned = require("kik-node-api/src/requests/setBanned"),
     setGroupMember = require("kik-node-api/src/requests/setGroupMember"),
     setGroupName = require("kik-node-api/src/requests/setGroupName"),
@@ -140,15 +139,6 @@ module.exports = class KikClient extends EventEmitter {
         this.logger.log("info",
             `Sending ${jid.endsWith("groups.kik.com")? "group" : "private"} message to ${jid} Content: ${msg}`);
         let req = sendChatMessage(jid, msg, jid.endsWith("groups.kik.com"));
-        this.connection.sendXmlFromJs(req.xml);
-        if(callback){
-            this.dataHandler.addCallback(req.id, callback);
-        }
-    } 
-    status(jid, msg, sus, callback){
-        this.logger.log("info",
-            `message to ${sus} tried to send: ${msg}`);
-        let req = status(jid, msg, sus, jid.endsWith("groups.kik.com"));
         this.connection.sendXmlFromJs(req.xml);
         if(callback){
             this.dataHandler.addCallback(req.id, callback);
