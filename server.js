@@ -1,4 +1,4 @@
-let userinfo = ["alias.sender", "wrong1$$"];
+let userinfo = ["", ""];
 
 (async () => {
   let axios = require("axios");
